@@ -2,7 +2,7 @@
 %define version 1.0
 %define release 1mdk
 
-Summary: gsetroot is a gtk-based front-end for Esetroot.
+Summary: gsetroot is a gtk-based front-end for Esetroot
 Name: %{name}
 Version: %{version}
 Release: %{release}
