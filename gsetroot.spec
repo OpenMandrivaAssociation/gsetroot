@@ -10,7 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/GNOME
 Url: http://gsetroot.sf.net
-BuildRequires: automake1.8
+BuildRequires: automake1.8 gtk2-devel
 Requires: Eterm
 
 %description
