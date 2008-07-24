@@ -1,6 +1,6 @@
 %define name gsetroot
 %define version 1.0
-%define release  %mkrel 2
+%define release  %mkrel 4
 
 Summary: Gtk-based front-end for Esetroot
 Name: %{name}
