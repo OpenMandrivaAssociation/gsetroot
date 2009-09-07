@@ -22,7 +22,7 @@ Enlightenment, WindowMaker, NextStep, BlackBox..
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
