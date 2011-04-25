@@ -1,6 +1,6 @@
 %define name gsetroot
 %define version 1.0
-%define release  %mkrel 6
+%define release  %mkrel 7
 
 Summary: Gtk-based front-end for Esetroot
 Name: %{name}
@@ -12,7 +12,7 @@ Group: Graphical desktop/GNOME
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Url: http://gsetroot.sf.net
 BuildRequires: automake1.8 gtk2-devel
-Requires: Eterm
+Requires: eterm
 
 %description
 Use it to configure root window under a Window Manager like FluxBox,
