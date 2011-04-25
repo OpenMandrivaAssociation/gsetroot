@@ -1,18 +1,17 @@
-%define name gsetroot
-%define version 1.0
-%define release  %mkrel 7
+%define name	gsetroot
+%define version	1.1
+%define release	1
 
-Summary: Gtk-based front-end for Esetroot
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
-License: GPL
-Group: Graphical desktop/GNOME
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Url: http://gsetroot.sf.net
-BuildRequires: automake1.8 gtk2-devel
-Requires: eterm
+Summary:	Gtk-based front-end for Esetroot
+Name:		%{name}
+Version:	%{version}
+Release:	%mkrel %{release}
+Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+License:	GPLv2
+Group:		Graphical desktop/GNOME
+Url:		http://gsetroot.sf.net
+BuildRequires:	gtk2-devel
+Requires:	eterm
 
 %description
 Use it to configure root window under a Window Manager like FluxBox,
@@ -26,17 +25,15 @@ Enlightenment, WindowMaker, NextStep, BlackBox..
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
-%makeinstall
-rm -rf $RPM_BUILD_ROOT/usr/doc/* 
+rm -rf %{buildroot}
+%makeinstall_std
+
+rm -rf %{buildroot}/usr/doc/* 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
-
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS README
+%doc AUTHORS README ChangeLog
 %{_bindir}/%{name}
-
