@@ -9,7 +9,7 @@ Release:	%mkrel %{release}
 Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/GNOME
-Url:		http://gsetroot.sf.net
+Url:		https://gsetroot.sf.net
 BuildRequires:	gtk2-devel
 Requires:	eterm
 
