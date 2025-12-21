@@ -10,6 +10,11 @@ Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/GNOME
 Url:		https://gsetroot.sf.net
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk2-devel
 Requires:	eterm
 
