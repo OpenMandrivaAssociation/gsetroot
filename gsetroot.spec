@@ -1,11 +1,11 @@
 %define name	gsetroot
 %define version	1.1
-%define release	2
+%define release 3
 
 Summary:	Gtk-based front-end for Esetroot
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{release}
+Release:	%{release}.1
 Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/GNOME
